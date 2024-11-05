@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem {
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+.botao {
+    position: absolute;
+    top: 50%; /* Ajuste a posição vertical */
+    left: 50%; /* Ajuste a posição horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s; /* Transição suave */
+}
+
+.container:hover .botao {
+    opacity: 1; /* Torna o botão visível ao passar o mouse */
+}
+

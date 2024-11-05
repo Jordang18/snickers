@@ -1,0 +1,288 @@
+/* Estilos de reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    position: relative; /* Adicionado para o rodapé absoluto */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+    
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: rgb(10, 10, 10);
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #d5dbd5 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+
+header li {
+    display: inline;
+    margin-left: 5px;
+}
+
+header h1 {
+    float: left;
+    display: inline;
+    padding: 10px;
+}
+
+.hero {
+    background: #960d14;
+    color: #fff;
+    padding: 3px 0;
+
+
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #4caf50;
+}
+
+.products {
+    padding: 20px 0;
+    overflow: auto; /* Adicionado para evitar que o conteúdo "escape" do contêiner */
+}
+
+.product-item {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-item h3 {
+    text-align: center;
+}
+
+.product-item .price {
+    text-align: center;
+    color: #4caf50;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #050000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Efeito de destaque para o item do produto ao passar o mouse */
+.product-item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para transformações e sombras */
+
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do item ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor do item */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* Adiciona transição suave para transformações das imagens */
+    
+}
+
+.product-item:hover img {
+    transform: scale(1.1); /* Aumenta ligeiramente a imagem ao passar o mouse */
+}
+
+.product-item h3 {
+    text-align: center;
+    transition: color 0.3s ease; /* Adiciona transição suave para a cor do texto */
+}
+
+.product-item:hover h3 {
+    color: #5e0312; /* Altera a cor do nome do produto ao passar o mouse */
+}
+
+.product-item .price {
+    text-align: center;
+    color: #8f0a1c;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Adiciona transição suave para a cor do preço */
+}
+
+.product-item:hover .price {
+    color: #333; /* Altera a cor do preço ao passar o mouse */
+}
+
+.logo {
+    font-family: DM serif Display;
+}
+
+.menu {
+  margin-top: 55px;
+  margin-right: 390px;
+}
+
+img {
+    width: 1500px;
+    height: auto;
+    height: 50%;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-shopping-cart {
+    font-size: 35px; /* Tamanho do ícone */
+    color: #dad7d7;     /* Cor do ícone */
+    position: absolute;
+   height: auto;
+    
+  }
+
+.buscar-box{
+    width: 80px;    
+    height: 80px;
+    background-color: (black);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: 3s;
+    margin-left: 1000px;
+    margin-top: -100px;
+    
+
+
+
+}
+
+.buscar-box.ativar{
+    width: 380px;
+}
+
+.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box .btn-fechar i{
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+
+.buscar-box .lupa-buscar i{
+    font-size: 35px;
+}
+
+.buscar-box .input-buscar{
+    position: absolute;
+    left: 80px;
+    width: calc(100%-120px);
+    height: 100px;
+    line-height: 80px;
+}
+
+.buscar-box .input-buscar input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+
+
+

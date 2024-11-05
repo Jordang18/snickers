@@ -1,0 +1,26 @@
+.same-height-columns__content {
+    position: relative;
+    display: inline-block;
+}
+.same-height-columns__content:hover .imagem{
+    opacity: 0.3;
+}
+
+.imagem {
+    width: 100%; /* Ajuste conforme necessário */
+
+}
+
+.botao {
+    position: absolute;
+    top: 50%; /* Ajuste a posição vertical */
+    left: 50%; /* Ajuste a posição horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: none;
+}
+
